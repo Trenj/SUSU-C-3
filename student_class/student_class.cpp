@@ -36,3 +36,17 @@ public:
 		cout << "Final Grade: " << calculateGrade() << endl; 
 	} 
 };
+
+int main() 
+{ 
+	// Creating a Student object 
+	Student student1("John Doe", "S1234567");
+
+	// Inputting scores 
+	student1.inputScores(85.5, 92.3);
+
+	// Displaying student details and final grade 
+	student1.displayDetails();
+
+	return 0;
+}
