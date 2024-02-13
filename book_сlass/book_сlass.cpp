@@ -27,3 +27,21 @@ public:
 		price = newPrice; 
 	} 
 };
+
+int main() 
+{ 
+	// Creating an object of Book class and initializing it 
+	Book myBook("The Great Gatsby", "F. Scott Fitzgerald", 1925, 20.99);
+
+	// Displaying book details 
+	cout << "Initial book details:" << endl; myBook.displayDetails();
+
+	// Updating the book's price
+	myBook.updatePrice(15.99);
+
+	// Displaying updated book details 
+	cout << "\nUpdated book details:" << endl; 
+	myBook.displayDetails();
+
+	return 0;
+}
